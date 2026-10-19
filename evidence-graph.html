@@ -1,19 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>How MRI reconstruction methods compare</title>
-    <script>
-      // Follows the system's light or dark setting; recon-graph.js re-reads its
-      // colours whenever data-theme changes.
-      (function () {
-        const dark = matchMedia("(prefers-color-scheme: dark)");
-        const set = () => document.documentElement.setAttribute("data-theme", dark.matches ? "dark" : "light");
-        set();
-        dark.addEventListener("change", set);
-      })();
-    </script>
+    <meta name="color-scheme" content="light" />
     <style>
 /* The evidence graph's page. The graph's own rules below are taken from
    mertcanozdemir.github.io (assets/css/_custom.scss, "Evidence graph") and

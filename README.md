@@ -1,0 +1,44 @@
+# MRI reconstruction evidence graph
+
+Reconstruction methods from the studies behind Fig. 2 of the paper (in
+preparation), linked when two were measured side by side in the same study.
+Each method's θ is its difference from U-Net (fastMRI), fitted on differences
+within one study and protocol only, so methods never compared directly still
+land on one scale through the methods they share. A method's distance from
+U-Net shows how firmly the comparisons tie it there (its standard error).
+
+## Open it
+
+Download **[evidence-graph.html](evidence-graph.html)** ("Download raw file")
+and open it in a browser. Everything is inside the file: it works offline,
+with no server.
+
+- **2D** is the network. Click a method for its θ, its studies and what it was
+  compared with; search, filter by family, window or number of studies.
+- **3D** lifts every method to its θ, so height is the difference from U-Net and
+  distance from the centre is still the standard error. Drag down to tilt into
+  it, drag to turn, let go near the top view to come back to 2D.
+
+## Methods table
+
+[methods.csv](methods.csv) has one row per method: family, first year in the
+corpus, whether a study proposed it, and θ ± SE with the number of studies, for
+PSNR (dB) and SSIM (logit). GitHub shows it as a searchable table.
+
+## Updating
+
+1. In the umram project, `python3 scripts/site_graf_verisi.py` writes
+   `rapor/site/mri_recon_graph.json`. Copy it to `data/`.
+2. `npm install` (once), then `npm run layout`, `npm run csv` and
+   `npm run build`.
+3. Commit `data/`, `methods.csv` and `evidence-graph.html` together.
+
+To work on the page itself, `npm run serve` and open
+<http://localhost:8000/src/>; `npm run build` folds it into the single file.
+
+## Files
+
+- `src/`: the page (`index.html`, `styles.css`) and `recon-graph.js`, which draws it.
+- `data/mri_recon_graph.json`: the networks, with the layout `npm run layout` adds.
+- `tools/`: the layout, the table and the single-file build.
+- `vendor/d3.min.js`: d3 7.9.0 (ISC licence).

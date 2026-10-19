@@ -1,0 +1,13 @@
+{
+  "name": "mri-recon-evidence",
+  "private": true,
+  "scripts": {
+    "layout": "node tools/graph-layout.js",
+    "csv": "node tools/methods-csv.js",
+    "build": "node tools/build.js",
+    "serve": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "d3-force": "3.0.0"
+  }
+}

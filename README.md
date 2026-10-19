@@ -9,8 +9,10 @@ U-Net shows how firmly the comparisons tie it there (its standard error).
 
 ## Open it
 
-Download **[evidence-graph.html](evidence-graph.html)** ("Download raw file")
-and open it in a browser. Everything is inside the file: it works offline,
+**<https://icon-lab.github.io/mri-recon-evidence-graph/>**
+
+Or download [evidence-graph.html](evidence-graph.html) ("Download raw file")
+and open it in a browser: everything is inside the file, so it works offline,
 with no server.
 
 - **2D** is the network. Click a method for its θ, its studies and what it was
@@ -31,7 +33,8 @@ PSNR (dB) and SSIM (logit). GitHub shows it as a searchable table.
    `rapor/site/mri_recon_graph.json`. Copy it to `data/`.
 2. `npm install` (once), then `npm run layout`, `npm run csv` and
    `npm run build`.
-3. Commit `data/`, `methods.csv` and `evidence-graph.html` together.
+3. Commit `data/`, `methods.csv` and `evidence-graph.html` together; a push to
+   `main` republishes the page.
 
 To work on the page itself, `npm run serve` and open
 <http://localhost:8000/src/>; `npm run build` folds it into the single file.
@@ -41,4 +44,4 @@ To work on the page itself, `npm run serve` and open
 - `src/`: the page (`index.html`, `styles.css`) and `recon-graph.js`, which draws it.
 - `data/mri_recon_graph.json`: the networks, with the layout `npm run layout` adds.
 - `tools/`: the layout, the table and the single-file build.
-- `vendor/d3.min.js`: d3 7.9.0 (ISC licence).
+- `vendor/d3.min.js`: d3 7.9.0 (ISC licence, `vendor/LICENSE-d3`).

@@ -45,3 +45,9 @@ To work on the page itself, `npm run serve` and open
 - `data/mri_recon_graph.json`: the networks, with the layout `npm run layout` adds.
 - `tools/`: the layout, the table and the single-file build.
 - `vendor/d3.min.js`: d3 7.9.0 (ISC licence, `vendor/LICENSE-d3`).
+
+## Licence
+
+The code is under the MIT licence ([LICENSE](LICENSE)); the data in `data/` and
+`methods.csv` under CC BY 4.0 ([LICENSE-DATA](LICENSE-DATA)); d3 under its own
+ISC licence ([vendor/LICENSE-d3](vendor/LICENSE-d3)).

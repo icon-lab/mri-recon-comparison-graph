@@ -26,8 +26,8 @@ ACNN-k-Space,CNN,2021,yes,1.81,1.17,1,0.235,0.203,1,https://doi.org/10.1016/j.me
 ACScyc,CNN,2024,no,0.72,1.36,1,-0.028,0.237,1,https://doi.org/10.1002/mp.17066
 Ada-IN,CNN,2025,no,0.58,1.76,1,0.124,0.305,1,https://doi.org/10.1007/978-3-030-87231-1_21
 AdaDiff,Diffusion,2023,yes,1.31,0.34,6,0.016,0.059,6,https://doi.org/10.1016/j.media.2023.102872
-Adjoint (Hᵀy),Other,2023,no,-9.03,1.21,1,-1.437,0.21,1,https://doi.org/10.48550/arxiv.2211.12461
-Adjoint NUFFT,Other,2022,no,-8.69,1.48,1,-1.402,0.256,1,https://doi.org/10.1016/j.media.2022.102538
+Adjoint (Hᵀy),Other,2023,no,-9.03,1.21,1,-1.437,0.21,1,
+Adjoint NUFFT,Other,2022,no,-8.69,1.48,1,-1.402,0.256,1,
 ADMIRE,CNN,2026,yes,1.52,1.63,1,0.586,0.282,1,https://doi.org/10.1002/nbm.70260
 ADMM-CSNet,CNN,2019,no,0.87,0.49,8,0.06,0.102,6,https://doi.org/10.1109/tpami.2018.2883941
 ADOBI,Diffusion,2026,yes,3.6,1.12,1,0.391,0.194,1,https://doi.org/10.1109/tci.2026.3678407
@@ -315,7 +315,7 @@ GM-SDE (four-channel),Diffusion,2024,yes,3.67,0.81,1,0.471,0.14,1,https://doi.or
 GRAPPA,Other,2019,no,-2.57,0.28,24,-0.655,0.047,29,https://doi.org/10.1002/mrm.10171
 GrappaNet,CNN,2019,yes,6.04,1.16,1,1.104,0.2,1,https://doi.org/10.1109/cvpr42600.2020.01432
 GRASP,Other,2025,no,2.6,1.5,3,0.984,0.26,3,https://doi.org/10.1002/mrm.24980
-Gridding/SDC,Other,2022,no,-6.37,0.79,3,-0.876,0.13,4,https://doi.org/10.1109/tmi.2022.3144619
+Gridding/SDC,Other,2022,no,-6.37,0.79,3,-0.876,0.13,4,
 GroupCDL,CNN,2025,yes,2.49,1.59,1,0.584,0.275,1,https://doi.org/10.1109/tci.2025.3539021
 GSURE,CNN,2022,no,-1.96,1.42,1,-0.383,0.246,1,https://doi.org/10.1109/tmi.2022.3224359
 GTF2M,Diffusion,2025,yes,0.53,1.13,1,0.202,0.196,1,https://doi.org/10.1007/978-3-031-96628-6_9
@@ -345,7 +345,7 @@ HUMUS-Net-L,Transformer,2022,yes,2.47,0.98,2,0.449,0.17,2,https://doi.org/10.522
 Hybrid Cascade,CNN,2020,no,2.28,1.14,2,0.36,0.382,1,https://proceedings.mlr.press/v102/souza19a.html
 Hybrid-Net,CNN,2021,no,2.2,1.17,1,0.288,0.203,1,https://proceedings.mlr.press/v102/souza19a.html
 HyperCoil-Recon,CNN,2023,yes,1.91,0.65,1,-0.128,0.113,1,https://doi.org/10.1109/iccvw60793.2023.00253
-i-RIM,CNN,2021,no,2.66,0.75,2,0.238,0.13,2,https://arxiv.org/abs/1911.10914
+i-RIM,CNN,2021,no,2.66,0.75,2,0.238,0.13,2,https://arxiv.org/abs/1910.08952
 I-UNET,CNN,2020,no,-4.41,1.42,1,-0.599,0.246,1,https://doi.org/10.1109/tmi.2020.3014581
 I2SB,Diffusion,2026,no,-2.08,0.61,2,-0.532,0.106,2,https://arxiv.org/abs/2302.05872
 ICNN,Other,2025,no,-2.83,2.43,1,-0.913,0.421,1,https://arxiv.org/abs/2008.02839
@@ -534,7 +534,7 @@ MuSE,Other,2025,no,-2.19,2.43,1,-0.68,0.421,1,https://doi.org/10.1109/tci.2024.3
 MW-RAKI,CNN,2022,yes,2.18,0.66,2,0.439,0.117,2,https://doi.org/10.1016/j.mri.2022.12.009
 MW-rRAKI,CNN,2022,yes,2.34,0.66,2,0.448,0.117,2,https://doi.org/10.1016/j.mri.2022.12.009
 MWCNN,CNN,2024,no,0.96,0.85,2,0.025,0.147,2,https://doi.org/10.1109/access.2019.2921451
-Naive gridding (Schad 2025),Other,2025,no,-21.87,2.18,1,-2.976,0.377,1,https://doi.org/10.1002/mrm.30572
+Naive gridding (Schad 2025),Other,2025,no,-21.87,2.18,1,-2.976,0.377,1,
 NC-PDNet,CNN,2022,yes,2.94,0.57,6,0.662,0.098,6,https://doi.org/10.1109/tmi.2022.3144619
 NCAPGD-Net,CNN,2024,no,1.56,1.52,1,0.212,0.263,1,https://doi.org/10.1088/1361-6420/ad1a3c
 NCSNRec,Diffusion,2021,no,0.04,1.67,1,-0.071,0.289,1,https://arxiv.org/abs/1907.05600
@@ -557,7 +557,7 @@ Non-linear GRAPPA,Other,2022,no,,,,-0.589,0.257,1,https://doi.org/10.1002/mrm.23
 NoSENSE,CNN,2023,yes,6.38,0.95,1,1.043,0.164,1,https://doi.org/10.1007/978-3-031-52448-6_43
 NPB-REC,CNN,2024,yes,1.97,0.68,2,0.301,0.117,2,https://doi.org/10.1016/j.artmed.2024.102798
 NPGD,CNN,2021,no,1.46,1.67,1,0.485,0.289,1,https://arxiv.org/abs/1806.03963
-NUFFT,Other,2019,no,-5.18,0.78,7,-0.899,0.136,7,https://doi.org/10.1088/1361-6560/ab990e
+NUFFT,Other,2019,no,-5.18,0.78,7,-0.899,0.136,7,
 NWT,Other,2021,no,,,,-0.482,0.278,1,https://doi.org/10.1002/mrm.26224
 OctConv,CNN,2021,yes,2.41,1.01,2,0.308,0.176,2,https://doi.org/10.1109/tnnls.2021.3090303
 OCUCFormer,Transformer,2024,yes,2.58,1.04,1,0.393,0.18,1,https://doi.org/10.1016/j.imavis.2024.105228
@@ -909,7 +909,7 @@ xREC,CNN,2019,yes,6.61,2.33,1,1.128,0.404,1,https://doi.org/10.1088/1361-6560/ab
 Y-net,CNN,2019,yes,,,,0.407,0.325,2,https://doi.org/10.1002/mp.14006
 Y-Net + GAN (Do 2020),GAN,2019,yes,,,,0.027,0.459,1,https://doi.org/10.1002/mp.14006
 ZADS,Diffusion,2025,yes,3.5,1.55,1,0.584,0.269,1,https://doi.org/10.1109/camsap66162.2025.11423975
-Zero-filled,Other,2018,no,-5.31,0.14,125,-0.781,0.024,125,https://doi.org/10.1109/tbme.2018.2821699
+Zero-filled,Other,2018,no,-5.31,0.14,125,-0.781,0.024,125,
 Zhang,CNN,2024,no,-2.65,1.76,1,,,,https://doi.org/10.1109/cvpr.2019.00215
 ZS-PF (Kang 2024),CNN,2024,yes,2.94,2.1,1,0.439,0.365,1,https://doi.org/10.1109/access.2024.3508761
 ZS-SSL,CNN,2022,yes,1.27,0.34,6,-0.271,0.061,5,https://doi.org/10.48550/arxiv.2102.07737

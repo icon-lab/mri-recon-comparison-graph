@@ -17,8 +17,9 @@ with no server.
 
 - **2D** is the network. Click a method for its θ, its studies, what it was
   compared with and a link to its paper (or, for a method with no paper of its
-  own, to the study that reported it); search, filter by family, window or
-  number of studies.
+  own, to the study that reported it; basic operations such as zero-filling get
+  a line saying what they are); search, filter by family, window or number of
+  studies.
 - **3D** lifts every method to its θ, so height is the difference from U-Net and
   distance from the centre is still the standard error. Drag down to tilt into
   it, drag to turn, let go near the top view to come back to 2D.
@@ -28,8 +29,9 @@ with no server.
 [methods.csv](methods.csv) has one row per method: family, first year in the
 corpus, whether a study proposed it, θ ± SE with the number of studies, for
 PSNR (dB) and SSIM (logit), and the online address (DOI, else arXiv) of its
-paper, or of the first study that reported it when it has no paper of its own.
-GitHub shows it as a searchable table.
+paper, or of the first study that reported it when it has no paper of its own
+(empty for basic operations such as zero-filling). GitHub shows it as a
+searchable table.
 
 ## Updating
 

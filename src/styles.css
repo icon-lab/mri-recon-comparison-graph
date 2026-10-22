@@ -51,6 +51,15 @@ main > .rg-howto {
   margin-top: 0;
 }
 
+/* Links in the theme colour, as on the site. */
+a {
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 .recon-graph {
   --rg-edge: #4a5568;
   --rg-surface: #f3f4f7;

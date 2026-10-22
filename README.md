@@ -15,8 +15,9 @@ Or download [evidence-graph.html](evidence-graph.html) ("Download raw file")
 and open it in a browser: everything is inside the file, so it works offline,
 with no server.
 
-- **2D** is the network. Click a method for its θ, its studies and what it was
-  compared with; search, filter by family, window or number of studies.
+- **2D** is the network. Click a method for its θ, its studies, what it was
+  compared with and a link to the paper that proposed it; search, filter by
+  family, window or number of studies.
 - **3D** lifts every method to its θ, so height is the difference from U-Net and
   distance from the centre is still the standard error. Drag down to tilt into
   it, drag to turn, let go near the top view to come back to 2D.
@@ -24,8 +25,9 @@ with no server.
 ## Methods table
 
 [methods.csv](methods.csv) has one row per method: family, first year in the
-corpus, whether a study proposed it, and θ ± SE with the number of studies, for
-PSNR (dB) and SSIM (logit). GitHub shows it as a searchable table.
+corpus, whether a study proposed it, θ ± SE with the number of studies, for
+PSNR (dB) and SSIM (logit), and the online address (DOI, else arXiv) of the
+paper that proposed it. GitHub shows it as a searchable table.
 
 ## Updating
 

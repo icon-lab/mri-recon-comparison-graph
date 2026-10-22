@@ -1,7 +1,9 @@
 // Writes methods.csv, one row per method, which GitHub shows as a searchable
 // table. θ and its standard error are against U-Net (fastMRI) in the all-years
 // graph, PSNR in dB and SSIM in logit; "first year" is the method's first year
-// in the corpus. Run it whenever data/mri_recon_graph.json changes:
+// in the corpus; "paper" is the online address (DOI, else arXiv) of the study
+// that proposed the method, where there is one. Run it whenever
+// data/mri_recon_graph.json changes:
 //   npm run csv
 const fs = require("fs"),
   path = require("path");
@@ -18,7 +20,7 @@ const rows = D.methods
   .map((m, i) => ({ m, p: psnr.get(i), s: ssim.get(i) }))
   .filter((r) => r.p || r.s)
   .sort((a, b) => a.m.name.localeCompare(b.m.name, "en", { sensitivity: "base" }))
-  .map(({ m, p, s }) => [m.name, m.family, m.year, m.proposed ? "yes" : "no", ...fit(p), ...fit(s)]);
-const head = ["method", "family", "first year", "proposed", "PSNR θ (dB)", "PSNR SE", "PSNR studies", "SSIM θ (logit)", "SSIM SE", "SSIM studies"];
+  .map(({ m, p, s }) => [m.name, m.family, m.year, m.proposed ? "yes" : "no", ...fit(p), ...fit(s), m.paper?.url]);
+const head = ["method", "family", "first year", "proposed", "PSNR θ (dB)", "PSNR SE", "PSNR studies", "SSIM θ (logit)", "SSIM SE", "SSIM studies", "paper"];
 fs.writeFileSync(path.join(root, "methods.csv"), [head, ...rows].map((r) => r.map(cell).join(",")).join("\n") + "\n");
 console.log(`wrote methods.csv (${rows.length} methods)`);

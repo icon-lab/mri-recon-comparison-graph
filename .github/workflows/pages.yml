@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Page
-        run: mkdir _site && cp evidence-graph.html _site/index.html && cp methods.csv _site/
+        run: mkdir _site && cp comparison-graph.html _site/index.html && cp methods.csv _site/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
       - id: deployment

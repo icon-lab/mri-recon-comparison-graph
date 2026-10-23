@@ -6,8 +6,8 @@
     <title>How MRI reconstruction methods compare</title>
     <meta name="color-scheme" content="light" />
     <style>
-/* The evidence graph's page. The graph's own rules below are taken from
-   mertcanozdemir.github.io (assets/css/_custom.scss, "Evidence graph") and
+/* The comparison graph's page. The graph's own rules below are taken from
+   mertcanozdemir.github.io (assets/css/_custom.scss, "Comparison graph") and
    style themselves against these --global-* colours, light and dark. */
 
 :root {
@@ -434,7 +434,7 @@ html[data-theme=dark] .recon-graph {
       <h1>How MRI reconstruction methods compare</h1>
       <p class="rg-howto">
         Methods from the studies behind Fig. 2 of the paper, joined when compared in the same paper. The closer to U-Net, the
-        firmer the evidence (circles: ± standard error). Click a method for details.
+        more firmly the comparisons tie a method to it (circles: ± standard error). Click a method for details.
       </p>
 
       <div class="recon-graph" data-graph data-src="../data/mri_recon_graph.json">
@@ -459,7 +459,7 @@ html[data-theme=dark] .recon-graph {
         <div class="rg-explorer">
           <div class="rg-main">
             <div class="rg-stage" data-stage>
-              <canvas aria-label="Evidence graph of reconstruction methods"></canvas>
+              <canvas aria-label="Comparison graph of reconstruction methods"></canvas>
               <div class="rg-seg rg-view" data-view role="group" aria-label="View">
                 <button type="button" aria-pressed="true" data-v="2d">2D</button>
                 <button type="button" aria-pressed="false" data-v="3d">3D</button>
@@ -487,7 +487,7 @@ html[data-theme=dark] .recon-graph {
       );
     </script>
     <script>
-// Evidence graph: reconstruction methods linked by the conditions they were
+// Comparison graph: reconstruction methods linked by the conditions they were
 // measured in side by side, from assets/json/mri_recon_graph.json.
 //
 // Drawn as a network: methods measured side by side sit close together.
@@ -863,7 +863,7 @@ html[data-theme=dark] .recon-graph {
 
     // Circles of equal standard error around the reference, on the ground.
     // Every method sits at rk·√SE from it, so the circles read as how firmly
-    // the evidence ties a method to U-Net (bin/graph-layout.js).
+    // the comparisons tie a method to U-Net (bin/graph-layout.js).
     ctx.globalAlpha = 1 - PJ.g;
     if (G.ref && G.g.rk && G.k && PJ.g < 0.99) {
       const top = d3.max(G.nodes, (n) => n.se) || 0;

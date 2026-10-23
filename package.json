@@ -1,5 +1,5 @@
 {
-  "name": "mri-recon-evidence",
+  "name": "mri-recon-comparison-graph",
   "private": true,
   "scripts": {
     "layout": "node tools/graph-layout.js",

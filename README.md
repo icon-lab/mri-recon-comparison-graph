@@ -1,4 +1,4 @@
-# MRI reconstruction evidence graph
+# MRI reconstruction comparison graph
 
 Reconstruction methods from the studies behind Fig. 2 of the paper (in
 preparation), linked when two were measured side by side in the same study.
@@ -9,9 +9,9 @@ U-Net shows how firmly the comparisons tie it there (its standard error).
 
 ## Open it
 
-**<https://icon-lab.github.io/mri-recon-evidence-graph/>**
+**<https://icon-lab.github.io/mri-recon-comparison-graph/>**
 
-Or download [evidence-graph.html](evidence-graph.html) ("Download raw file")
+Or download [comparison-graph.html](comparison-graph.html) ("Download raw file")
 and open it in a browser: everything is inside the file, so it works offline,
 with no server.
 
@@ -39,7 +39,7 @@ searchable table.
    `rapor/site/mri_recon_graph.json`. Copy it to `data/`.
 2. `npm install` (once), then `npm run layout`, `npm run csv` and
    `npm run build`.
-3. Commit `data/`, `methods.csv` and `evidence-graph.html` together; a push to
+3. Commit `data/`, `methods.csv` and `comparison-graph.html` together; a push to
    `main` republishes the page.
 
 To work on the page itself, `npm run serve` and open

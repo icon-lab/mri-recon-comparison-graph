@@ -1,4 +1,4 @@
-// Builds evidence-graph.html: src/index.html with its styles, d3, the script
+// Builds comparison-graph.html: src/index.html with its styles, d3, the script
 // and the data inlined, so the page opens from a downloaded file, offline and
 // with no server. Run it after any change to src/ or data/:
 //   npm run build
@@ -35,5 +35,5 @@ swap(
     <script>
 ${script("src/recon-graph.js")}</script>`
 );
-fs.writeFileSync(path.join(root, "evidence-graph.html"), html);
-console.log(`wrote evidence-graph.html (${(html.length / 1e6).toFixed(1)} MB)`);
+fs.writeFileSync(path.join(root, "comparison-graph.html"), html);
+console.log(`wrote comparison-graph.html (${(html.length / 1e6).toFixed(1)} MB)`);

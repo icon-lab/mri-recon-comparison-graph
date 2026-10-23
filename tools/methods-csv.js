@@ -5,7 +5,9 @@
 // much older than the first study that compared it); "paper" is the online
 // address (DOI, else arXiv) of the paper that introduced the method or, for one
 // with no paper of its own, of the first study that reported it; empty for basic
-// operations such as zero-filling. Run it whenever data/mri_recon_graph.json
+// operations such as zero-filling. "paper in graph" says whether that paper is
+// one of the studies here: a comparator's own paper usually is not, its θ coming
+// from the studies that compared it. Run it whenever data/mri_recon_graph.json
 // changes:
 //   npm run csv
 const fs = require("fs"),
@@ -23,7 +25,32 @@ const rows = D.methods
   .map((m, i) => ({ m, p: psnr.get(i), s: ssim.get(i) }))
   .filter((r) => r.p || r.s)
   .sort((a, b) => a.m.name.localeCompare(b.m.name, "en", { sensitivity: "base" }))
-  .map(({ m, p, s }) => [m.name, m.family, m.proposed ? m.year : "", m.proposed ? "yes" : "no", ...fit(p), ...fit(s), (m.paper || m.reported)?.url]);
-const head = ["method", "family", "first year", "proposed", "PSNR θ (dB)", "PSNR SE", "PSNR studies", "SSIM θ (logit)", "SSIM SE", "SSIM studies", "paper"];
+  .map(({ m, p, s }) => {
+    const ln = m.paper || m.reported;
+    return [
+      m.name,
+      m.family,
+      m.proposed ? m.year : "",
+      m.proposed ? "yes" : "no",
+      ...fit(p),
+      ...fit(s),
+      ln?.url,
+      ln ? (ln.study != null ? "yes" : "no") : "",
+    ];
+  });
+const head = [
+  "method",
+  "family",
+  "first year",
+  "proposed",
+  "PSNR θ (dB)",
+  "PSNR SE",
+  "PSNR studies",
+  "SSIM θ (logit)",
+  "SSIM SE",
+  "SSIM studies",
+  "paper",
+  "paper in graph",
+];
 fs.writeFileSync(path.join(root, "methods.csv"), [head, ...rows].map((r) => r.map(cell).join(",")).join("\n") + "\n");
 console.log(`wrote methods.csv (${rows.length} methods)`);

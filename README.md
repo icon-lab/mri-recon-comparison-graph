@@ -15,11 +15,13 @@ Or download [comparison-graph.html](comparison-graph.html) ("Download raw file")
 and open it in a browser: everything is inside the file, so it works offline,
 with no server.
 
-- **2D** is the network. Click a method for its θ, its studies, what it was
-  compared with and a link to its paper (or, for a method with no paper of its
-  own, to the study that reported it; basic operations such as zero-filling get
-  a line saying what they are); search, filter by family, window or number of
-  studies.
+- **2D** is the network. Click a method for its θ, the studies that measured
+  it (where that θ comes from), what it was compared with and a link to its
+  paper (or, for a method with no paper of its own, to the study that reported
+  it; basic operations such as zero-filling get a line saying what they are). A
+  comparator's own paper is usually not one of the studies here, and the card
+  says so. Search, filter by family, window or number of studies; the circles
+  of equal standard error are the same in every window.
 - **3D** lifts every method to its θ, so height is the difference from U-Net and
   distance from the centre is still the standard error. Drag down to tilt into
   it, drag to turn, let go near the top view to come back to 2D.
@@ -31,7 +33,8 @@ corpus (for proposed methods only: a comparator's own paper may be much older),
 whether a study proposed it, θ ± SE with the number of studies, for PSNR (dB)
 and SSIM (logit), and the online address (DOI, else arXiv) of its paper, or of
 the first study that reported it when it has no paper of its own (empty for
-basic operations such as zero-filling). GitHub shows it as a searchable table.
+basic operations such as zero-filling), and whether that paper is one of the
+studies here. GitHub shows it as a searchable table.
 
 ## Updating
 

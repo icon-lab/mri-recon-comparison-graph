@@ -411,6 +411,29 @@ html[data-theme=dark] .recon-graph {
   color: var(--global-text-color-light);
 }
 
+.rg-studies {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+.rg-studies li {
+  margin: 0 0 5px;
+}
+.rg-studies .rg-num {
+  color: var(--global-text-color-light);
+}
+
+.rg-studies-more summary {
+  color: var(--global-text-color-light);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.rg-studies-more[open] summary {
+  margin-bottom: 5px;
+}
+
 .rg-path {
   display: flex;
   flex-wrap: wrap;

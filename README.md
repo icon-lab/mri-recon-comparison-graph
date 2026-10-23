@@ -27,11 +27,11 @@ with no server.
 ## Methods table
 
 [methods.csv](methods.csv) has one row per method: family, first year in the
-corpus, whether a study proposed it, θ ± SE with the number of studies, for
-PSNR (dB) and SSIM (logit), and the online address (DOI, else arXiv) of its
-paper, or of the first study that reported it when it has no paper of its own
-(empty for basic operations such as zero-filling). GitHub shows it as a
-searchable table.
+corpus (for proposed methods only: a comparator's own paper may be much older),
+whether a study proposed it, θ ± SE with the number of studies, for PSNR (dB)
+and SSIM (logit), and the online address (DOI, else arXiv) of its paper, or of
+the first study that reported it when it has no paper of its own (empty for
+basic operations such as zero-filling). GitHub shows it as a searchable table.
 
 ## Updating
 

@@ -54,6 +54,11 @@ h1 {
   line-height: 1.25;
 }
 
+.authors {
+  margin: 0 0 0.75rem;
+  color: var(--global-text-color-light);
+}
+
 /* The site pulls the intro up under its own page title; here it follows h1. */
 main > .rg-howto {
   margin-top: 0;
@@ -475,6 +480,7 @@ html[data-theme=dark] .recon-graph {
   <body>
     <main>
       <h1>How MRI reconstruction methods compare</h1>
+      <p class="authors">Mertcan Ozdemir, Bilal Kabas, Emine U. Saritas, Tolga Cukur · UMRAM, Bilkent University</p>
       <p class="rg-howto">
         Methods from the studies behind Fig. 2 of the paper, joined when a study measured them side by side. Distance from U-Net is not quality: the
         closer a method, the more firmly the comparisons tie it to U-Net (circles: ± standard error, the same in every window). Click one for details;

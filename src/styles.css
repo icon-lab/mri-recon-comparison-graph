@@ -46,6 +46,11 @@ h1 {
   line-height: 1.25;
 }
 
+.authors {
+  margin: 0 0 0.75rem;
+  color: var(--global-text-color-light);
+}
+
 /* The site pulls the intro up under its own page title; here it follows h1. */
 main > .rg-howto {
   margin-top: 0;

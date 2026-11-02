@@ -1,7 +1,7 @@
 # MRI reconstruction comparison graph
 
-Reconstruction methods from the studies behind Fig. 2 of the paper (in
-preparation), linked when two were measured side by side in the same study.
+Methods from published studies of learning-based MRI reconstruction, linked
+when two were measured side by side in the same study.
 Each method's θ is its difference from U-Net (fastMRI), fitted on differences
 within one study and protocol only, so methods never compared directly still
 land on one scale through the methods they share. A method's distance from
